@@ -54,7 +54,7 @@ def cpu_bound_task(id):
         iters += 1
     callback_function(iters)
 
-    
+
 
 
 if __name__ == "__main__":
@@ -78,13 +78,11 @@ if __name__ == "__main__":
         msg2 = "thread-based concurrency"
     print(msg1, "with", msg2)
 
-
     # thread or process-based concurrency?
     if use_threads:
         executor = ThreadPoolExecutor(max_workers=nthreads)
     else:
         executor = ProcessPoolExecutor(max_workers=nthreads)
-    
 
     # map
     futures = list()
@@ -95,7 +93,6 @@ if __name__ == "__main__":
         else:
             fut = executor.submit(io_bound_task, num)
         futures.append(fut)
-
 
     # reduce
     print("waiting")
