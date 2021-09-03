@@ -1,6 +1,6 @@
 # ThreadPoolExecutor vs ProcessPoolExecutor
 
-Simple demo / example of trade-offs between process-based vs thread-based concurrency in Python.
+100 lines of code showcasing the trade-offs between process-based vs thread-based concurrency in Python.
 
 ThreadPoolExecutor is limited by Python's GIL (Global Interpreter Lock) and can only utilize a single CPU-core at a time.
 
